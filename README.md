@@ -12,3 +12,6 @@ Components Required:
 
 when offline/processing (red is on), when online/ready to use (green is on).
 
+LIMITATIONS:
+FREE API INCLUDES 1500 RESPONSES PER DAY.
+ONLY WORKS IN 3.3V POWER SUPPLY.
