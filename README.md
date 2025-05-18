@@ -1,17 +1,6 @@
 Implementation of Google Gemini in ESP 32.
 
-This Is a project that includes Gemini API in ESP32 board. The Instruction To use it are as follows:
-1. Press The EN device to restart the system and Open Serial Monitor in Arduino IDE (baud rate should be 115200).
-2. Enter the Wifi ID and Password.
-3. The System is Ready for Prompt.
-
-Components Required:
-1. ESP32 Wifi.
-2. 1 RED LED (pin 12) AND 1 GREEN LED (pin 13).
-3. USB A TO B cable.
-
-when offline/processing (red is on), when online/ready to use (green is on).
-
-LIMITATIONS:
-FREE API INCLUDES 1500 RESPONSES PER DAY.
-ONLY WORKS IN 3.3V POWER SUPPLY.
+The rapid growth of Internet of Things (IoT) technology has made it possible to integrate cloud-based APIs with embedded systems, enabling real-time data processing, secure communication, and interactive displays. This paper presents a WiFi-enabled ESP32-based system that establishes a secure HTTPS connection with the Gemini API, allowing users to send queries dynamically and receive instant responses. Instead of using hardcoded network credentials, the system gathers WiFi details via a serial interface, allowing flexibility in connecting to different networks.
+To enhance user interaction and status monitoring, the system incorporates an SSD1306 OLED display for presenting API responses in a clear and structured format. Additionally, two LED indicators provide real-time system feedback: the green LED (GPIO 4) confirms a stable WiFi connection and successful API interactions, while the red LED (GPIO 2) alerts users to connection failures or API errors. This visual feedback ensures quick troubleshooting and system reliability.
+The ESP32 sends user-generated queries over a secure HTTPS connection, safeguarding data privacy and integrity. Upon receiving a response, the system processes the JSON data using the ArduinoJson library, efficiently extracting and formatting relevant information for display. The optimized data handling and structured output on the OLED screen ensure quick and responsive system performance, enhancing the overall user experience.
+Designed with standardized formatting and structured coding practices, the system maintains compatibility with electronic submission requirements, making it adaptable for further research and development. By integrating secure API communication, real-time query handling, and user-friendly display management, this ESP32-based system provides a practical solution for IoT applications requiring cloud-based data retrieval. Its modular design can be adapted for various smart automation, monitoring, and real-time data processing tasks, demonstrating the potential of API-driven IoT solutions in embedded environments.
